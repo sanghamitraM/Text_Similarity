@@ -1,5 +1,5 @@
 ## Text-Similarity-Model
-This is project to takes as inputs two texts and uses the cosine similarity metric to determine how similar they are.
+This is a project which takes two texts as input and uses the cosine similarity metric on the TF-IDF values to determine how similar they are.
 
 ### Prerequisites
 Flask (for API) and Numpy. Check Requirements.txt.
