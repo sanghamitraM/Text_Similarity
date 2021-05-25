@@ -17,15 +17,15 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Text1" placeholder="Text1" style="font-size: 18pt; height: 100px; width: 300px;" required="required" />
-        <input type="text" name="Text2" placeholder="Text2" style="font-size: 18pt; height: 100px; width: 300px;" required="required" />
+    	<textarea name="Text1" placeholder="Text1" rows="5" cols="20" required="required"></textarea>
+        <textarea name="Text2" placeholder="Text2" rows="5" cols="20" required="required"></textarea>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Calculate</button>
     </form>
 
    <br>
    <br>
-   {{ prediction_text }}
+   <p>{{ prediction_text }}</p>
 
  </div>
 
